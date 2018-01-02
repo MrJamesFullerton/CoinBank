@@ -1,0 +1,209 @@
+body {
+  background: #FFF url("background.jpg");
+}
+
+.navbar {
+  padding: 4px 12px 1px;
+  min-height: 0;
+  vertical-align: middle;
+  font-family: 'Hind', Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.navbar-default {
+  background-color: rgba(240, 240, 240, 0.9);
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+#top-bar .grand-total-btc {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#under-nav {
+  padding-top: 20px;
+  background-color: rgba(240, 240, 240, 0.6);
+  border-radius: 0 0 10px 10px;
+}
+
+#head-collapser {
+  transition: color 220ms;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#head-collapser:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+#head-collapser:active {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+@keyframes headChevFlip {
+  from {transform: rotate(0);}
+  to {transform: rotate(180);}
+}
+
+.head-chevron-flip {
+  animation: headChevFlip 420ms cubic-bezier(0.8, 0, 0.5, 1.2);
+  transform: rotate(180deg);
+}
+
+.th-success {
+  background-color: #5cb85c;
+  color: white;
+}
+
+.th-danger {
+  background-color: #d9534f;
+  color: white;
+}
+
+.symbol-label {
+  transition: background-color 200ms;
+  background-color: #337ab7;
+  display: inline;
+  position: absolute;
+  top: -1.5px;
+}
+
+.label-symbol::before {
+  background-color: #5cb85c;
+}
+
+.form-control.currency {
+  display: inline-block;
+}
+
+.input-group-btn .btn-default img {
+  position: relative;
+  top: -2px;
+}
+
+#balanceTable tbody {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+#balanceTable tr {
+  transition: background-color 130ms;
+}
+
+#balanceTable tr:hover:not(.header-row) {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+#balanceTable .header-row {
+  font-family: 'Hind', Helvetica, Arial, sans-serif;
+}
+
+#balanceTable th {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 1);
+  vertical-align: middle;
+}
+
+#balanceTable th .btn-group-xs .btn {
+  padding: 0px 5px;
+}
+
+#balanceTable td {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  font-family: 'Droid Sans Mono', 'Lucida Console', monospace;
+  font-size: 15px;
+  padding: 4px 8px;
+  text-align: right;
+  vertical-align: middle;
+}
+
+#balanceTable .save-cell {
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 35px;
+  padding: 8px 6px;
+}
+
+#balanceTable .form-control, #exco-factor {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#balanceTable .form-control:focus, #exco-factor:focus {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+#balanceTable .header-row {
+  font-size: 16px;
+}
+
+#balanceTable .btn-default {
+  background-color: #FAFBFF;
+}
+
+#balanceTable .btn.disabled {
+  background-color: #F1F1F1;
+}
+
+#balanceTable .portion {
+  text-align: center;
+}
+
+#exco-factor {
+  border: solid 1px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+  text-align: center;
+  /*font-style: italic;*/
+  word-wrap: break-word;
+}
+
+.qr-link {
+  color: black;
+}
+
+.modal-body {
+  text-align: center;
+}
+
+.glyphicon-bitcoin {
+  font-size: 65%;
+  position: relative;
+  top: -5%;
+}
+
+#balanceTable .price-btc, #balanceTable .total-btc, #balanceTable .grand-total-btc {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#footer-text {
+  padding: 0;
+}
+
+.panel {
+  background: none;
+  border-color: rgba(255, 255, 255, 1);
+}
+
+.panel-default>.panel-heading, .panel-footer{
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.footer .panel-heading, #footer-text {
+  font-family: 'Hind', Helvetica, Arial, sans-serif;
+}
+
+.footer .sub-header {
+  margin-top: 0;
+  font-family: 'Hind', Helvetica, Arial, sans-serif;
+  letter-spacing: 1.6px;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.panel-body {
+  padding: 15px 0px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 95%;
+}
+
+.panel-footer {
+  font-style: italic;
+}
